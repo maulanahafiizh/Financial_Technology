@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  @apply bg-slate-100;
+}
+
+@layer components {
+  .button {
+    @apply bg-blue-700 hover:bg-blue-800 p-3 rounded-lg text-white font-medium text-sm xl:text-xl;
+  }
+
+  .card {
+    @apply border-2 bg-white border-black/20 p-5 lg:p-7 shadow-xl rounded-lg flex flex-col gap-5 text-center w-full items-center justify-center;
+  }
+
+  .card-title {
+    @apply text-2xl 2xl:text-3xl font-bold;
+  }
+
+  .card-subtitle {
+    @apply text-lg xl:text-xl font-semibold;
+  }
+
+  .card-price {
+    @apply text-sm lg:text-base xl:text-[18px] font-bold;
+  }
+
+  .card-desc {
+    @apply text-sm lg:text-base w-full text-justify;
+  }
+
+  .card-body {
+    @apply flex flex-col gap-2 justify-between items-center h-full;
+  }
+}
