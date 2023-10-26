@@ -21,19 +21,19 @@ body {
   }
 
   .card-title {
-    @apply text-2xl 2xl:text-3xl font-bold;
+    @apply text-2xl lg:text-3xl 2xl:text-4xl font-bold;
   }
 
   .card-subtitle {
-    @apply text-lg xl:text-xl font-semibold;
+    @apply text-lg lg:text-2xl 2xl:text-3xl font-semibold;
   }
 
   .card-price {
-    @apply text-sm lg:text-base xl:text-[18px] font-bold;
+    @apply text-sm lg:text-xl 2xl:text-2xl font-bold;
   }
 
   .card-desc {
-    @apply text-sm lg:text-base w-full text-justify;
+    @apply text-sm lg:text-xl 2xl:text-2xl w-full text-justify;
   }
 
   .card-body {
